@@ -15,11 +15,8 @@ $j( document ).ready(function() {
         try {
         var name = $j(this).find("span[itemprop='name']").text();
         var sigLink = "http://wotlabs.net/sig_dark/na/" + name + "/signature.png";
-            console.log(index + " " + sigLink);
-        //$j(this).find(".desc").find(".lighter").append('<img src="' + sigLink + '">');
         $j(this).find(".post_count").html('<div class="wotstats"><img src="' + sigLink + '"></div>');
         } catch(err) {
-            
         }
     });
     $j(".wotstats").css("width", "106");
