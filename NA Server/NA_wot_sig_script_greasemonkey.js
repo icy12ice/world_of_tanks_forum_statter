@@ -8,6 +8,10 @@
 // @copyright   icy12ice
 // ==/UserScript==
 
+/*
+Add this to your "included pages"
+http://forum.worldoftanks.com/index.php?/topic/*
+*/
 var $j = jQuery.noConflict();
 
 $j( document ).ready(function() {
