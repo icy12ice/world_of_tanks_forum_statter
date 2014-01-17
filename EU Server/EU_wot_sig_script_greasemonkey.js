@@ -1,5 +1,5 @@
 // ==UserScript==
-// @name        World Of Tanks Stats Lookup
+// @name        World Of Tanks Stats Lookup EU
 // @namespace   World_Of_Tanks
 // @description Looks up user's stats on wotlabs
 // @version     1.0
@@ -17,7 +17,7 @@ var $j = jQuery.noConflict();
 $j( document ).ready(function() {
     $j("div.hentry").each(function(index) {
         try {
-			var name = $j(this).find("span[itemprop='name']").text();
+			var name = $j(this).find("span[itemprop='creator name']").text();
 			var sigLink = "http://wotlabs.net/sig_dark/eu/" + name + "/signature.png";
 			$j(this).find(".post_count").html('<div class="wotstats"><img src="' + sigLink + '"></div>');
         } catch(err) {

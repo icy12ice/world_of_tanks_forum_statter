@@ -1,5 +1,5 @@
 // ==UserScript==
-// @name       World of Tanks Forum Stats Adder
+// @name       World Of Tanks Stats Lookup NA
 // @namespace  World_Of_Tanks
 // @version    1.0
 // @description  Adds a relevant stats to every forum poster

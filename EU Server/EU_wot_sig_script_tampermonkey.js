@@ -1,5 +1,5 @@
 // ==UserScript==
-// @name       World of Tanks Forum Stats Adder
+// @name       World Of Tanks Stats Lookup EU
 // @namespace  World_Of_Tanks
 // @version    1.0
 // @description  Adds a relevant stats to every forum poster
@@ -13,8 +13,8 @@ var $j = jQuery.noConflict();
 $j( document ).ready(function() {
     $j("div.hentry").each(function(index) {
         try {
-			var name = $j(this).find("span[itemprop='name']").text();
-			var sigLink = "http://wotlabs.net/sig_dark/na/" + name + "/signature.png";
+			var name = $j(this).find("span[itemprop='creator name']").text();
+			var sigLink = "http://wotlabs.net/sig_dark/eu/" + name + "/signature.png";
 			$j(this).find(".post_count").html('<div class="wotstats"><img src="' + sigLink + '"></div>');
         } catch(err) {
         }
