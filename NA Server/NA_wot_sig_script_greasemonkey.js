@@ -11,6 +11,8 @@
 /*
 Add this to your "included pages"
 http://forum.worldoftanks.com/index.php?/topic/*
+Add this to your "excluded pages"
+http://worldoftanks.com/*
 */
 var $j = jQuery.noConflict();
 
