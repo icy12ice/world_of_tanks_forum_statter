@@ -4,16 +4,11 @@
 // @description Looks up user's stats on wotlabs
 // @version     1.0
 // @grant       none
+// @match		http://forum.worldoftanks.com/index.php?/topic/*
 // @require     http://code.jquery.com/jquery-latest.js
 // @copyright   icy12ice
 // ==/UserScript==
 
-/*
-Add this to your "included pages"
-http://forum.worldoftanks.com/index.php?/topic/*
-Add this to your "excluded pages"
-http://worldoftanks.com/*
-*/
 var $j = jQuery.noConflict();
 
 $j( document ).ready(function() {
