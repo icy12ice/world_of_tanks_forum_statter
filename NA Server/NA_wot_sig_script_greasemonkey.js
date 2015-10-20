@@ -14,7 +14,7 @@ var $j = jQuery.noConflict();
 $j( document ).ready(function() {
     $j("div.hentry").each(function(index) {
         try {
-			var name = $j(this).find("span[itemprop='name']").text();
+			var name = $j(this).find("span.author").text().trim();
 			var sigLink = "http://wotlabs.net/sig_dark/na/" + name + "/signature.png";
 			$j(this).find(".post_count").html('<div class="wotstats"><img src="' + sigLink + '"></div>');
         } catch(err) {
